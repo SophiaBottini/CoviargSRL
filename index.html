@@ -1,121 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoviargConsrtuctora</title>
-    <meta name="description" content="Constructora Coviarg">
+    <meta name="description" content="Constructora Coviarg" />
 
     <!-- Prefetch -->
-    <link rel="prefetch" href="nosotros.html" as="document">
+    <link rel="prefetch" href="nosotros.html" as="document" />
 
     <!-- Preload -->
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
 
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      crossorigin="crossorigin"
+      as="font"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!--Script Eventos-->
     <script src="js/script.js"></script>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="header">
+      <div class="contenedor">
+        <div class="barra">
+          <a class="logo" href="index.html">
+            <h1 class="logo__nombre no-margin centrar-texto">
+              COVIARG<span class="logo__bold">constructora</span>
+            </h1>
+          </a>
 
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">COVIARG<span class="logo__bold">constructora</span></h1>
-                </a>
-
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace nosotros">Nosotros</a>
-                    <a href="obras.html" class="navegacion__enlace">Obras</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-                </nav>
-            </div>
+          <nav class="navegacion">
+            <a href="nosotros.html" class="navegacion__enlace nosotros"
+              >Nosotros</a
+            >
+            <a href="obras.html" class="navegacion__enlace">Obras</a>
+            <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+          </nav>
         </div>
+      </div>
 
-        <div class="header__texto">
-            <h2 class="no-margin">Constructora vial Argentina</h2>
-            <p class="no-margin">Realizamos las obras de construccion con mas exito en la region.</p>
-        </div>
+      <div class="header__texto">
+        <h2 class="no-margin">Constructora vial Argentina</h2>
+        <p class="no-margin">
+          Realizamos las obras de construccion con mas exito en la region.
+        </p>
+      </div>
     </header>
 
     <div class="contenedor contenido-principal">
-        <main class="blog">
-            <h3>Nuestras obras</h3>
+      <main class="blog">
+        <h3>Nuestras obras</h3>
 
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <picture>
-                        <source loading="lazy"  srcset="img/obra5.jpg" type="image/webp">
-                        <img loading="lazy" src="img/obra5.jpg" alt="imagen blog"> 
-                    </picture>
-                </div>
+        <article class="entrada">
+          <div class="entrada__imagen">
+            <picture>
+              <source loading="lazy" srcset="img/obra5.jpg" type="image/webp" />
+              <img loading="lazy" src="img/obra5.jpg" alt="imagen blog" />
+            </picture>
+          </div>
 
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Obras Viales</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="obrasViales.html" class="boton boton--primario">Mas sobre Obras Viales</a>
-                </div>
-            </article>
+          <div class="entrada__contenido">
+            <h4 class="no-margin">Obras Viales</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, rerum, reprehenderit consequatur perferendis officia,
+              vitae fuga animi temporibus itaque atque reiciendis ea excepturi!
+              Molestias aperiam fugiat deleniti laudantium atque numquam?
+            </p>
+            <a href="obrasViales.html" class="boton boton--primario"
+              >Mas sobre Obras Viales</a
+            >
+          </div>
+        </article>
 
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <picture>
-                        <source loading="lazy"  srcset="img/obra1.jpg" type="image/webp">
-                        <img loading="lazy" src="img/obra1.jpg" alt="imagen blog"> 
-                    </picture>
-                </div>
+        <article class="entrada">
+          <div class="entrada__imagen">
+            <picture>
+              <source loading="lazy" srcset="img/obra1.jpg" type="image/webp" />
+              <img loading="lazy" src="img/obra1.jpg" alt="imagen blog" />
+            </picture>
+          </div>
 
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Obras Civiles</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="obrasCiviles.html" class="boton boton--primario">Mas sobre Obras Civiles</a>
-                </div>
-            </article>
-        </main>
-        <aside class="sidebar">
-            <h3>Nuestra Experiencia</h3>
+          <div class="entrada__contenido">
+            <h4 class="no-margin">Obras Civiles</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, rerum, reprehenderit consequatur perferendis officia,
+              vitae fuga animi temporibus itaque atque reiciendis ea excepturi!
+              Molestias aperiam fugiat deleniti laudantium atque numquam?
+            </p>
+            <a href="obrasCiviles.html" class="boton boton--primario"
+              >Mas sobre Obras Civiles</a
+            >
+          </div>
+        </article>
+      </main>
+      <aside class="sidebar">
+        <h3>Nuestra Experiencia</h3>
 
-            <ul class="cursos no-padding">
-                <li class="widget-curso">
-                    <h4 class="no-margin">Quienes Somos</h4>
-                    <p class="widget-curso__info">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia,
-                        vitae fuga animi temporibus itaque atque reiciendis ea excepturi!
-                        Molestias aperiam fugiat deleniti laudantium atque numquam?
-
-                    </p>
-                    <a href="nosotros.html" class="boton boton--secundario">Más Información sobre nosotros</a>
-                </li>
-            </ul>
-        </aside>
+        <ul class="cursos no-padding">
+          <li class="widget-curso">
+            <h4 class="no-margin">Quienes Somos</h4>
+            <p class="widget-curso__info">
+                
+                    Somos un grupo de profesionales con mas de 20 años de experiencia
+                    dedicados a las obras viales , civiles e hidraulicas. Hemos
+                    participados en obras emblematicas del pais.
+               
+            </p>
+            <a href="nosotros.html" class="boton boton--secundario"
+              >Más Información sobre nosotros</a
+            >
+          </li>
+        </ul>
+      </aside>
     </div>
 
     <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Coviarg<span class="logo__bold">Constructora</span></h1>
-                </a>
+      <div class="contenedor">
+        <div class="barra">
+          <a class="logo" href="index.html">
+            <h1 class="logo__nombre no-margin centrar-texto">
+              Coviarg<span class="logo__bold">Constructora</span>
+            </h1>
+          </a>
 
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="obras.html" class="navegacion__enlace">Obras</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-                </nav>
-            </div>
+          <nav class="navegacion">
+            <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+            <a href="obras.html" class="navegacion__enlace">Obras</a>
+            <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+          </nav>
         </div>
+      </div>
     </footer>
-    
+
     <script src="js/modernizr.js"></script>
-</body>
+  </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAPy5xtJCTa8aZPvcCsMU7mSlIuDUEP8y0",
+      authDomain: "coviarg-86113.firebaseapp.com",
+      projectId: "coviarg-86113",
+      storageBucket: "coviarg-86113.appspot.com",
+      messagingSenderId: "620638566074",
+      appId: "1:620638566074:web:82404fe6524556fa58b483",
+      measurementId: "G-BLJ54VGLMH"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </html>

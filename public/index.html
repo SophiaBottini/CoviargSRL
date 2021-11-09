@@ -1,89 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoviargConsrtuctora</title>
+    <meta name="description" content="Constructora Coviarg" />
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.4.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document" />
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      crossorigin="crossorigin"
+      as="font"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Script Eventos-->
+    <script src="js/script.js"></script>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <header class="header">
+      <div class="contenedor">
+        <div class="barra">
+          <a class="logo" href="index.html">
+            <h1 class="logo__nombre no-margin centrar-texto">
+              COVIARG<span class="logo__bold">constructora</span>
+            </h1>
+          </a>
+
+          <nav class="navegacion">
+            <a href="nosotros.html" class="navegacion__enlace nosotros"
+              >Nosotros</a
+            >
+            <a href="obras.html" class="navegacion__enlace">Obras</a>
+            <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="header__texto">
+        <h2 class="no-margin">Constructora vial Argentina</h2>
+        <p class="no-margin">
+          Realizamos las obras de construccion con mas exito en la region.
+        </p>
+      </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+      <main class="blog">
+        <h3>Nuestras obras</h3>
+
+        <article class="entrada">
+          <div class="entrada__imagen">
+            <picture>
+              <source loading="lazy" srcset="img/obra5.jpg" type="image/webp" />
+              <img loading="lazy" src="img/obra5.jpg" alt="imagen blog" />
+            </picture>
+          </div>
+
+          <div class="entrada__contenido">
+            <h4 class="no-margin">Obras Viales</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, rerum, reprehenderit consequatur perferendis officia,
+              vitae fuga animi temporibus itaque atque reiciendis ea excepturi!
+              Molestias aperiam fugiat deleniti laudantium atque numquam?
+            </p>
+            <a href="obrasViales.html" class="boton boton--primario"
+              >Mas sobre Obras Viales</a
+            >
+          </div>
+        </article>
+
+        <article class="entrada">
+          <div class="entrada__imagen">
+            <picture>
+              <source loading="lazy" srcset="img/obra1.jpg" type="image/webp" />
+              <img loading="lazy" src="img/obra1.jpg" alt="imagen blog" />
+            </picture>
+          </div>
+
+          <div class="entrada__contenido">
+            <h4 class="no-margin">Obras Civiles</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, rerum, reprehenderit consequatur perferendis officia,
+              vitae fuga animi temporibus itaque atque reiciendis ea excepturi!
+              Molestias aperiam fugiat deleniti laudantium atque numquam?
+            </p>
+            <a href="obrasCiviles.html" class="boton boton--primario"
+              >Mas sobre Obras Civiles</a
+            >
+          </div>
+        </article>
+      </main>
+      <aside class="sidebar">
+        <h3>Nuestra Experiencia</h3>
+
+        <ul class="cursos no-padding">
+          <li class="widget-curso">
+            <h4 class="no-margin">Quienes Somos</h4>
+            <p class="widget-curso__info">
+                
+                    Somos un grupo de profesionales con mas de 20 años de experiencia
+                    dedicados a las obras viales , civiles e hidraulicas. Hemos
+                    participados en obras emblematicas del pais.
+               
+            </p>
+            <a href="nosotros.html" class="boton boton--secundario"
+              >Más Información sobre nosotros</a
+            >
+          </li>
+        </ul>
+      </aside>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="barra">
+          <a class="logo" href="index.html">
+            <h1 class="logo__nombre no-margin centrar-texto">
+              Coviarg<span class="logo__bold">Constructora</span>
+            </h1>
+          </a>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+          <nav class="navegacion">
+            <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+            <a href="obras.html" class="navegacion__enlace">Obras</a>
+            <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
   </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAPy5xtJCTa8aZPvcCsMU7mSlIuDUEP8y0",
+      authDomain: "coviarg-86113.firebaseapp.com",
+      projectId: "coviarg-86113",
+      storageBucket: "coviarg-86113.appspot.com",
+      messagingSenderId: "620638566074",
+      appId: "1:620638566074:web:82404fe6524556fa58b483",
+      measurementId: "G-BLJ54VGLMH"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </html>

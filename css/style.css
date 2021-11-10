@@ -60,14 +60,14 @@ img {
 
 /** Header **/
 .webp .header {
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/obra4.jpg);
 }
 .no-webp .header {
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/obra8.JPG);
 }
 .header {
     height: 60rem;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
